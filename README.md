@@ -1,0 +1,5 @@
+# NAMS STUDENT OFFENSE REPORT PROJECT 2025-2026
+## Department of Academic Technology & Northside Alternative Middle School (NAMS)
+<b>Project Lead:</b> Reggie Ollendiek, Associate Principal<br>
+<b>Script Development:</b> Alvaro Gomez, Academic Technology Coach<br>
+<b>Purpose:</b> This is a Google Sheets bound Google Apps Script that NAMS uses for office referrals. Teachers fill out a Google Form with the necessary information. The data is submitted to the associated Google Sheet. Administrators monitor the sheet then process with the students as needed. Administrator will fill in fields on the Google Sheet after they process with the student. The administrator then pushes the <i>Teacher Followup Emails</i> user interface and selects <i>Send Emails Now</i>. The script will send an email to the teacher notifying them with necessary information.
