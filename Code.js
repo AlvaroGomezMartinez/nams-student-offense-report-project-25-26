@@ -4,24 +4,14 @@
  *
  * The script below supports NAMS's student office referral workflow.
  * Teachers fill out a Google Form
- * (https://docs.google.com/forms/d/e/1FAIpQLSdJP_N1O8fwcrSAKqCscIkPzMZf_AaNe2Hiod0U-0deVMgN7g/viewform)
+ * (https://docs.google.com/forms/d/e/1FAIpQLSfQLr8mRLxVpFahi3xKUYiEExblbU5_6S_jOlBphM3Kfl8cPg/viewform)
  * when they want to create an offense report. The submission of the Google Form populates in the
- * 2024-2025 NAMS Student Offense Report (Responses) sheet that is monitored by the NAMS administration.
+ * 2025-2026 NAMS Student Offense Report sheet that is monitored by the NAMS administration.
  * Administration will process the student offense report and provide information in the sheet.
  * Administration will then indicate that they are ready to send an email to the teacher who filled out
  * the form with the action they took and the consequences that the student received.
  *
- * References:
- *  https://spreadsheet.dev/working-with-checkboxes-in-google-sheets-using-google-apps-script
- *  https://github.com/lsvekis/Google-Apps-Script/blob/main/Apps%20Script%20Emailer/Apps%20Script%20Code
- *
- * Script author and point of contact:
- *  Alvaro Gomez
- *  Academic Technology Coach
- *  Office: 210-397-9408
- *
- * Latest Update:
- *  07/14/25 - Replaced Decker with Ollendieck.
+ * Google Apps Script Developer: Alvaro Gomez, Academic Technology Coach, 210-397-9408
  *
 */
 
@@ -55,14 +45,14 @@ function onOpen() {
   });
 }
 
-/***************************************************************************
- * Checks whether a row from Column Q is checked and also if there's a     *
- * date in Column R.                                                       *
- * If checked and no date, then it returns the data's row and creates the  *
- *  const "User" with the email data.                                      *
- * If checked and has a date, then it skips the row.                       *
- * If not checked and no date, then it skips the row.                      *
-***************************************************************************/
+/**
+ * Checks whether a row from Column Q is checked and also if there's a
+ * date in Column R.
+ * If checked and no date, then it returns the data's row and creates the
+ * const "User" with the email data.
+ * If checked and has a date, then it skips the row.
+ * If not checked and no date, then it skips the row.
+*/
 function processSelectedRows() {
   let currentRowIndex = -1; // Initialize variable to track the row where an error occurred
 
