@@ -11,7 +11,8 @@
  * Administration will then indicate that they are ready to send an email to the teacher who filled out
  * the form with the action they took and the consequences that the student received.
  *
- * Google Apps Script Developer: Alvaro Gomez, Academic Technology Coach, 210-397-9408
+ * Last Updated: 1/8/26
+ * Added Mr. Jyrus Freels to the teacher email list.
  *
 */
 
@@ -116,6 +117,10 @@ function processSelectedRows() {
           "Franco, G": {
             Email: "george.franco01@nisd.net",
             Salutation: "Mr.",
+          },
+          Freels: {
+            Email: "jyrus.freels@nisd.net",
+            Salutation: "Mr. ",
           },
           Garcia: {
             Email: "danny.garcia@nisd.net",
